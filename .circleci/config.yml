@@ -99,4 +99,4 @@ workflows:
           requires:
             - "lint-dockerfile"
       - create-deployment:
-          requires: [build-push-docker-images, create-aws-cluster]
+          requires: [push-docker-images, create-aws-cluster]
