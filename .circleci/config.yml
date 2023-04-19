@@ -92,7 +92,7 @@ workflows:
   deployment:
     jobs:
       - lint-dockerfile
-      - build-push-docker-images:
+      - push-docker-images:
           requires:
             - "lint-dockerfile"
       - create-aws-cluster:
