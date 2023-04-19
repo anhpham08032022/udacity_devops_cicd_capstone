@@ -58,7 +58,7 @@ jobs:
     steps:
       - checkout
       - aws-eks/create-cluster:
-          cluster-name: anhpham-capstone
+          cluster-name: anhpham-capstone-cluster
           aws-region: us-east-1
           node-type: t3.medium
           nodes-min: 1
@@ -70,7 +70,7 @@ jobs:
     steps:
       - checkout
       - aws-eks/update-kubeconfig-with-authenticator:
-          cluster-name: anhpham-capstone
+          cluster-name: anhpham-capstone-cluster
           install-kubectl: true
       - kubernetes/create-or-update-resource:
           resource-file-path: deployment.yaml
