@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: baolm-capstone-service
+  name: anhpham-capstone-service
 spec:
   type: LoadBalancer
   ports:
     - port: 8080
       targetPort: 80
-      name: capstone
+      name: anhpham-capstone
       protocol: TCP
   selector:
-    app: baolm-capstone
+    app: anhpham-capstone
