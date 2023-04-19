@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anhpham-capstone
+  labels:
+    app: anhpham-capstone
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anhpham-capstone
+  template:
+    metadata:
+      labels:
+        app: anhpham-capstone
+    spec:
+      containers:
+        - name: anhpham-capstone
+          image: docker.io/081104062022/capstone-project:latest
+          imagePullPolicy: Always
+          ports:
+            - name: app
+              containerPort: 80
