@@ -49,4 +49,6 @@
 
 ![load_balancers](screenshots/load_balancers.png)
 
+![ec2_running](screenshots/EC2_running.png)
+
 ![run_application](screenshots/run_application.png)
